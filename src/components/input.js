@@ -13,7 +13,7 @@ class Input extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleChange1 = this.handleChange1.bind(this);
     this.handleChange2 = this.handleChange2.bind(this);
-    this.handleClick = this.handleClick.bind(this);
+    this.calculateSum = this.calculateSum.bind(this);
   }
 
   handleChange(event) {
@@ -28,14 +28,15 @@ class Input extends Component {
     this.setState({option: event.target.value});
   }
 
-  handleClick(event) {
+  calculateSum = () => {
     this.setState({
       summ: parseFloat(this.state.value) +
       (parseFloat(this.state.value) * (this.state.option / 12) / 100) *
       this.state.month,
     });
-    event.preventDefault();
-  }
+    var sum = this.summ;
+    return sum;
+  };
 
   render() {
     const value = this.state.value;
@@ -52,10 +53,10 @@ class Input extends Component {
             <option value="0.5">для умных</option>
           </select></h3>
           <h3>Сумма кредита: <input type="text" id="money" value={value}
-                            onChange={this.handleChange}/></h3>
+                                    onChange={this.handleChange}/></h3>
           <h3>Срок кредитования: <input type="text" id="term" value={month}
-                           onChange={this.handleChange1}/></h3>
-          <button onClick={this.handleClick}>Рассчитать сумму к выплате</button>
+                                        onChange={this.handleChange1}
+                                        onKeyUp={this.calculateSum}/></h3>
           <hr/>
           <h3>Сумма к выплате: <text id="out">{summ}</text></h3>
 
