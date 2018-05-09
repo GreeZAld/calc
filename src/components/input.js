@@ -53,12 +53,12 @@ class Input extends Component {
             <option value="0.5">для умных</option>
           </select></h3>
           <h3>Сумма кредита: <input type="text" id="money" value={value}
-                                    onChange={this.handleChange}/></h3>
+                                    onChange={this.handleChange}/> р.</h3>
           <h3>Срок кредитования: <input type="text" id="term" value={month}
                                         onChange={this.handleChange1}
-                                        onKeyUp={this.calculateSum}/></h3>
+                                        onKeyUp={this.calculateSum}/> мес.</h3>
           <hr/>
-          <h3>Сумма к выплате: <text id="out">{summ}</text></h3>
+          <h3>Сумма к выплате: <text id="out">{summ}</text> р.</h3>
 
 
         </div>

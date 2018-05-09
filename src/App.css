@@ -22,8 +22,8 @@ option {
 }
 
 select {
-    background-color: mediumpurple;
-    color: white;
+    background-color: lightcoral;
+    color: black;
     height: 40px;
     font-size: 18px;
     font-weight: 700;
@@ -33,8 +33,8 @@ select {
 }
 
 input {
-    background-color: mediumpurple;
-    color: white;
+    background-color: lightcoral;
+    color: black;
     height: 40px;
     width: 152px;
     font-size: 20px;
@@ -53,18 +53,9 @@ input {
 }
 
 #out {
-    color: mediumpurple;
+    color: lightcoral;
     font-size: 25px;
-}
-
-button {
-    background-color: mediumpurple;
-    height: 50px;
-    margin-left: 60px;
-    color: white;
-    font-size: 23px;
-    font-weight: 700;
-
+    padding-left: 160px;
 }
 
 
