@@ -1,68 +1,70 @@
 .App {
-    margin-top: 40px;
-    margin-left: 30px;
+  margin-top: 40px;
+  margin-left: 30px;
 }
 
 .App-title {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .App-intro {
-    font-size: large;
+  font-size: large;
 }
 
 h3 {
-    font-size: 25px;
-    color: mediumpurple;
+  font-size: 25px;
+  color: mediumpurple;
 }
 
 option {
-    font-weight: 700;
-    font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 select {
-    background-color: lightcoral;
-    color: black;
-    height: 40px;
-    font-size: 18px;
-    font-weight: 700;
-    border: none;
-    padding-left: 10px;
-    margin-left: 10px;
+  background-color: lightcoral;
+  color: black;
+  height: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  padding-left: 10px;
+  margin-left: 10px;
 }
 
 input {
-    background-color: lightcoral;
-    color: black;
-    height: 40px;
-    width: 152px;
-    font-size: 20px;
-    font-weight: 700;
-    border: none;
-    text-align: right;
-    padding-right: 5px;
+  background-color: lightcoral;
+  color: black;
+  height: 40px;
+  width: 152px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  text-align: right;
+  padding-right: 5px;
+}
+
+span {
+  color: lightcoral;
+  font-weight: 700;
 }
 
 #money {
-    margin-left: 103px;
+  margin-left: 103px;
 }
 
 #term {
-    margin-left: 49px;
+  margin-left: 49px;
 }
 
 #out {
-    color: lightcoral;
-    font-size: 25px;
-    padding-left: 160px;
+  color: lightcoral;
+  font-size: 25px;
+  padding-left: 160px;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
-
-
-
